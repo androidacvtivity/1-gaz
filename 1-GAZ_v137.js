@@ -939,6 +939,8 @@
             }
         }
 
+        // 
+
         // Cap.1: Dacă [Rind.02 sau 03, Col.*] > 0, atunci [Rind.CUATM, Col.*] > 0
         for (let c = 1; c <= 8; c++) {
             const valR2 = parseFloat(values[`CAP1_R2_C0${c}`]) || 0;
