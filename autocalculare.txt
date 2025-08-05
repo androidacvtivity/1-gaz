@@ -1,0 +1,30 @@
+[CAP1_R1_C01]+[CAP1_R1_C02]-[CAP1_R1_C04]=[CAP1_R1_C06];
+[CAP1_R2_C01]+[CAP1_R2_C02]-[CAP1_R2_C04]=[CAP1_R2_C06];
+[CAP1_R3_C01]+[CAP1_R3_C02]-[CAP1_R3_C04]=[CAP1_R3_C06];
+[CAP1_R4_C01]+[CAP1_R4_C02]-[CAP1_R4_C04]=[CAP1_R4_C06];
+[CAP1_R_C01]+[CAP1_R_C02]-[CAP1_R_C04]=[CAP1_R_C06{N}]msg(Error);
+
+[CAP2_R1_C01]+[CAP2_R1_C02]-[CAP2_R1_C05]=[CAP2_R1_C08];
+[CAP2_R2_C01]+[CAP2_R2_C02]-[CAP2_R2_C05]=[CAP2_R2_C08];
+[CAP2_R3_C01]+[CAP2_R3_C02]-[CAP2_R3_C05]=[CAP2_R3_C08];
+[CAP2_R4_C01]+[CAP2_R4_C02]-[CAP2_R4_C05]=[CAP2_R4_C08];
+[CAP2_R_C01]+[CAP2_R_C02]-[CAP2_R_C05]=[CAP2_R_C08{N}]msg(Error);
+
+sum([&CAP1_R_C01])=[CAP1_R1_C01]error(Cod eroare: [01-006]. col.1 Rînd.01 = Suma tuturor rîndurilor);
+sum([&CAP1_R_C02])=[CAP1_R1_C02]error(Cod eroare: [01-006]. col.2 Rînd.01 = Suma tuturor rîndurilor);
+sum([&CAP1_R_C03])=[CAP1_R1_C03]error(Cod eroare: [01-006]. col.3 Rînd.01 = Suma tuturor rîndurilor);
+sum([&CAP1_R_C04])=[CAP1_R1_C04]error(Cod eroare: [01-006]. col.4 Rînd.01 = Suma tuturor rîndurilor);
+sum([&CAP1_R_C05])=[CAP1_R1_C05]error(Cod eroare: [01-006]. col.5 Rînd.01 = Suma tuturor rîndurilor);
+
+sum([&CAP2_R_C01])=[CAP2_R1_C01]error(Cod eroare: [01-006]. col.1 Rînd.01 = Suma tuturor rîndurilor);
+sum([&CAP2_R_C02])=[CAP2_R1_C02]error(Cod eroare: [01-006]. col.2 Rînd.01 = Suma tuturor rîndurilor);
+sum([&CAP2_R_C03])=[CAP2_R1_C03]error(Cod eroare: [01-006]. col.3 Rînd.01 = Suma tuturor rîndurilor);
+sum([&CAP2_R_C04])=[CAP2_R1_C04]error(Cod eroare: [01-006]. col.4 Rînd.01 = Suma tuturor rîndurilor);
+sum([&CAP2_R_C05])=[CAP2_R1_C05]error(Cod eroare: [01-006]. col.5 Rînd.01 = Suma tuturor rîndurilor);
+sum([&CAP2_R_C06])=[CAP2_R1_C06]error(Cod eroare: [01-006]. col.6 Rînd.01 = Suma tuturor rîndurilor);
+sum([&CAP2_R_C07])=[CAP2_R1_C07]error(Cod eroare: [01-006]. col.7 Rînd.01 = Suma tuturor rîndurilor);
+
+sum([&CAP3_R_C01])=[CAP3_R1_C01]error(Cod eroare: [01-006]. col.1 Rînd.01 = Suma tuturor rîndurilor);
+sum([&CAP3_R_C02])=[CAP3_R1_C02]error(Cod eroare: [01-006]. col.2 Rînd.01 = Suma tuturor rîndurilor);
+sum([&CAP3_R_C03])=[CAP3_R1_C03]error(Cod eroare: [01-006]. col.3 Rînd.01 = Suma tuturor rîndurilor);
+sum([&CAP3_R_C04])=[CAP3_R1_C04]error(Cod eroare: [01-006]. col.4 Rînd.01 = Suma tuturor rîndurilor);
